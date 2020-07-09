@@ -93,7 +93,13 @@ footer {
     height: auto;
     position: absolute;
     bottom: 0;
-    right: -1px;
+}
+footer p {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    color: #ccc;
+    padding: 10px;
 }
 
 /* Media queries */
