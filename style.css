@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    /* background-color: #c83737; */
+    /* overflow: hidden; */
+}
+/* HOME */
+#home {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    height: 70vh;
+    width: 70vw;
+    position: relative;
+    /* box-shadow: 4px 4px #c83737; */
+    box-shadow: 0px 0px 18px 0 rgba(0,0,0,0.7);
+    border-radius: 12px;
+    background-color: #c83737;
+}
+.card::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(0,0,0,0.3); */
+    border-radius:10px ;
+} 
+.bg-img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.bg-img img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px;
+}
+.container{
+    height: 100%;
+    width: 50%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.container img {
+    position:absolute;
+    object-fit: cover;
+    object-position: center;
+    height:250px;
+    opacity: 1;
+    /* top: 20px; */
+}
+.content {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.content h1 {
+    color:#fff;
+    font-size: 3em;
+    text-align: center;
+}
+.content p {
+    color:#fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+footer {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: -1px;
+}
+
+/* Media queries */
+@media(max-width:768px){
+    .card {
+        width: 90vw;
+    }
+    .container {
+        width: 100%;
+    }
+    .container img{
+        top:0;
+    }
+    .content {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 0 auto;
+    }
+    .content h1{
+        position: absolute;
+        bottom: 40%;
+        font-size: 2rem;
+    }
+    .content p {
+        position: absolute;
+        bottom: 35%;
+        font-size:1rem;
+    }
+}
